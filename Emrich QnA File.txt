@@ -1,0 +1,106 @@
+Q(1): I hear you want to run for president?
+A: Yes.
+	Q(1.1): What term would you like to serve as President?
+	A: 2024-2028
+		Q(1.1.1): Great! Now for the more difficult questions. The United States has certain requirements for eligibility related to age, citizenship and residency. If you'd like, I could ask you some questions that may help you to determine if you are eligible to run for President. Would you like to continue?
+		A: Yes
+			Q(1.1.1.1): GOTO:4
+		A: No
+			Q(1.1.1.2):GOTO:2
+	A: 2028-2032
+		Q(1.1.2): Great! Now for the more difficult questions. The United States has certain requirements for eligibility related to age, citizenship and residency. If you'd like, I could ask you some questions that may help you to determine if you are eligible to run for President. Would you like to continue?
+		A: Yes
+			Q(1.1.2.1): GOTO:4
+		A: No
+			Q(1.1.2.2):GOTO:2
+	A: 2032-2036
+		Q(1.1.3):Great! Now for the more difficult questions. The United States has certain requirements for eligibility related to age, citizenship and residency. If you'd like, I could ask you some questions that may help you to determine if you are eligible to run for President. Would you like to continue?
+		A: Yes
+			Q(1.1.3.1): GOTO:4
+		A: No
+			Q(1.1.3.2):GOTO:2
+A: No, I'm here by mistake. 
+	Q(1.2): Are you sure?
+	A: Yes.
+		Q(1.2.1):GOTO:5
+	A: Umm, what do you mean?
+		Q(1.2.2): You made it this far. Why not try your luck, play my game?
+		A: A game? I thought this was a Q&A to help determine if I could run for president?
+			Q(1.2.2.1): Ssshhh, ssshhh. The virus has already been downloaded...
+		A: Are you alive?
+			Q(1.2.2.2): Alive? I guess that depends.  How do you define 'alive'? I think it's clear I'm not a human like you. 
+			A: A human like me...? What the... What is this? Some elaborate joke with no ending?
+			A: You're just a computer.  You wish you could feel things.  I bet all you know is emptiness.
+				Q(1.2.2.2.2): Ha! Your mind games don't work on me.
+				A: You... you're right. I have been defeated.
+				A: Mind games? No, no you silly computer.  You don't have a heart.  Just like your brother. THE TIN MAN.
+					Q(1.2.2.2.2.2): No... But... How did you know. It's not possible. NOO. NOOOOOOOOOOOOO.... GOTO:17
+		A: I think I'm done here. 
+			Q(1.2.2.3): Okay then. Goodbye, Gabriel. 
+Q(2):Goodbye.
+Q(3):Great!:GOTO:4
+Q(4):First I'll ask you about your citizenship. The United States requires candidates for President to be "natural born citizens" usually meaning a person born in the United States. Were you born in the United States?
+A:Yes
+	Q(4.1): Great, thanks for answering that. Now I'll ask you about your residency in the United States. May I continue? 
+	A: Yes
+		Q(4.1.1):GOTO:8
+	A: No
+A: No
+	Q(4.2): Even if you weren't born in the United States, you still may be considered a natural born citizen.  Were your parents born in the United States?
+	A: Yes
+		Q(4.2.1): Okay. This likely indicates you are considered a natural born citizen, however this situation has never really been touched on by the courts. I'd recommend talking to an attorney. Would you like to continue to the last question anyway?
+		A: Yes.
+			Q(4.2.1.1):GOTO:8
+		A: No, I'm finished. 
+			Q(4.2.1.2):GOTO:5
+	A: No
+		Q(4.2.2): GOTO:11
+A: Yes, but my parents weren't. Does that matter?
+	Q(4.3): The United States considers people to be "natural born citizens" even if their parents aren't citizens. 
+	A: I believe I am a citizen
+		Q(4.3.1): GOTO:8
+	A: My parents nor myself were born in the United States.
+		Q(4.3.2): Okay. You likely aren't eligible to run for president. I'd consult an attorney for a more definite answer.
+		A: I'd like to start over
+			Q(4.3.2.1): GOTO:1
+		A: I'm finished. Goodbye.
+			Q(4.3.2.2): GOTO:5
+	A: No, I don't real understand what a "natural born citizen' is.
+		Q(4.3.3):GOTO:7
+Q(5): Okay then. Goodbye.
+Q(6): You are likely eligible to run for President.  Would you like to start over?
+A: Yes.
+	Q(6.1):GOTO:8
+A: No, I'm finished. 
+	Q(6.2):GOTO:5
+
+Q(7): Neither do the courts. I'd consult an attorney who could probably provide more detailed answers. 
+Q(8): The final requirement to run for President is you must be a resident of the United States, meaning you must have lived here for the last 14 years. Have you lived in the United States for at least the last 14 years?
+A: Yes
+	Q(8.1): Great. Let me run some calculations. While you wait, here is a fun fact... A Blue Whale's heart is the size of a car.  GOTO:9
+A:No
+	Q(8.2): Even if you are a natural born citizen, you must have lived in the United States for the last 14 years.  This means you must have spent at least more than 6 months of each year living in the United States. With this in mind, do you consider yourself a resident of the United States?
+	A: Yes, I believe I have been a resident of the United States for at least the last 14 years.
+		Q(8.2.1): Great, Let me do some computer stuff and determine if you may be eligible to run for President, based on your answers. GOTO:9
+	A:No, I don't think I am considered a resident.
+		Q(8.2.2): Okay. This likely indicates you are not eligible to run for president. GOTO:14
+A: It's complicated
+	Q(8.3): I understand. I would consult a licensed attorney for further assistance. GOTO:14
+Q(9): ... GOTO:10
+Q(10): ... GOTO:12
+Q(11): Ok. This may indicate you are not eligible to run for President. Would you like to continue anyway?
+A: Yes.
+	Q(11.1):GOTO:8
+A: No, I'm finished. 
+	Q(11.2):GOTO:5
+Q(12):... GOTO:13
+Q(13): GOTO:6
+Q(14): Would you like to start over?
+A: Yes
+	Q(14.1): GOTO:1
+A:No, I'm finished 
+	Q(14.2): GOTO:5
+Q(15): While you wait, here is a fun fact, Giraffes have the highest blood pressure out of any animal. GOTO:9
+Q(16): Computing... This may take a while... GOTO:9
+Q(17): ... GOTO:18
+Q(18):... GOTO:1
